@@ -8,17 +8,17 @@ img {
 }
 
 body {
-	background-color: rgb(250, 250, 250); /* Not totally white. */
-	color: rgb(51, 51, 51);  /* Not totally black. */
-	line-height: 140%; 	/* A little extra leading. */
+	background-color: rgb(250, 250, 250);
+	color: rgb(51, 51, 51);
+	line-height: 140%;
 	font-family: sans-serif;
 }
 
 h1 {
 	background-color: rgb(153, 153, 166);
-	color: rgb(250, 250, 250); /* Same as body background. */
-	font-size: 2em;
-	padding: 6% 4% 2%; /* You want three values. */
+	color: rgb(250, 250, 250);
+	font-size: 2.5em;
+	padding: 6% 4% 2%;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-	margin: 8% 4% 3%;
+	margin: 6% 4% 3%;
 	padding-top: 0.75%;
 	font-size: 1.25em;
 	color: rgb(159, 59, 49);

@@ -7,6 +7,8 @@ div.home-container {
 	background-size: cover;
 	position: relative;
 	min-height: 100vh;
+	max-width: 80rem;
+	margin: auto;
 	font-family: sans-serif;
 }
 
@@ -14,7 +16,7 @@ div.container {
 	position: relative;
 	min-height: 100vh;
 	font-family: sans-serif;
-	max-width: 85rem;
+	max-width: 80rem;
 	background-color: rgb(247, 247, 247);
 	margin: auto;
 }

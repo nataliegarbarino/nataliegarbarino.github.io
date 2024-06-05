@@ -2,6 +2,10 @@
 
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
+a:hover {
+    opacity: 75%;
+  }
+
 body {
     background-color: rgb(225, 225, 225);
 }
@@ -12,36 +16,47 @@ img {
 }
 
 header {
-	padding: 2rem .5rem 1rem;
-    margin: auto;
+	padding: 3rem .5rem 1rem;
 }
 
 div.container, div.home-container {
     max-width: 40em;
     position: relative;
     margin: auto;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(250, 249, 247);
 }
 
 div.form {
 max-width: 40em;
+max-height: 200vh;
 margin: auto;
-background-color: rgb(250, 250, 250);
+background-color: rgb(250, 249, 247);
+position: relative;
+}
+
+footer {
+    background-color: rgb(156, 155, 54);
+    padding: 1rem;
+    color:  rgb(250, 249, 247);
+    margin: 0rem;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
 }
 
 h1 {
-	width: 20rem;
-    padding: 0rem .5rem 1.5rem;
-    margin: auto;
+	width: 15rem;
+    padding: 0rem 0rem 1.5rem;
+    margin-left: 1rem;
 }
 
 h2 {
     color: rgb(156, 155, 54);
-    font-size: 2.5em;
+    font-size: 2.25rem;
     font-family: "adelle", serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
-    padding: 1.5rem .5rem .75rem;
+    padding: 1.5rem 1rem .75rem;
 }
 
 ul li {
@@ -54,16 +69,16 @@ p, nav, figcaption, footer, section.personal-info ul li label, .preferences ul l
     font-style: normal;
 }
 
-figcaption{
-    padding-left: .5rem;
-    padding-right: .5rem;
-}
-
 p {
     color: rgb(89, 72, 11);
     margin-bottom: .75rem;
     line-height: 1.25em;
-    padding: 0rem .5rem 1rem;
+    padding: 0rem 1rem 1rem;
+}
+
+aside p {
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 
 a {
@@ -75,7 +90,7 @@ nav ul li a {
     font-weight: 250;
     line-height: 1.5rem;
     text-transform: uppercase;
-    font-size: .87rem;
+    font-size: .9rem;
 }
 
 nav {
@@ -124,44 +139,34 @@ input {
 figcaption {
     font-style: italic; 
     color:  rgb(103, 103, 103);
-    padding: .5rem .5rem 1rem;
+    padding: .5rem 1rem 1rem;
 }
 
 section.mainstory h2 {
-    padding: .25rem .5rem 0rem;
+    padding: .25rem 1rem 0rem;
 }
 
 section.secondary h2 {
     font-size: 1.3em;
-    padding: .25rem .5rem 0rem;
+    padding: .25rem 1rem 0rem;
 }
 
 section.tertiary h2 {
     font-size: 1em;
     padding-top: .5rem;
-    border-top: 1px solid  rgb(151, 167, 190);
-    margin: 0rem .5rem;
+    border-top: 1px solid rgb(217, 73, 39);
     padding: .5rem 0rem 0rem;
-    color:  rgb(151, 167, 190);
+    color:  rgb(217, 73, 39);
 }
 
 aside h2 {
     font-size: 1.25em;
-    padding-bottom: 0rem;
-    padding-top: .5rem;
+    padding-left: 0rem;
 }
 
 aside {
-    padding: 1rem .5rem 1rem;
-    background-color:  rgb(239, 239, 223);
-}
-
-footer {
-    background-color: rgb(151, 167, 190);
     padding: 1rem;
-    color:  rgb(245, 245, 245);
-    margin: 0rem;
-    box-sizing: border-box;
+    background-color:  rgb(239, 239, 223);
 }
 
 section.personal-info ul li input[type="text"],
@@ -178,14 +183,13 @@ section ul li select {
     font-size: 1.1rem;
     font-family: "adelle", serif;
     color: rgb(156, 155, 54);
-
 }
 
 .personal-info, .preferences {
     max-width: 40em;
-    margin: 0rem 1rem 1rem;
+    margin-top: 1rem;
     padding: 2rem;
-    background-color:  rgb(239, 239, 223);
+    background-color:   rgb(239, 239, 223);
 }
 
 .personal-info ul, .preferences ul {
@@ -205,14 +209,14 @@ section ul li select {
 
 .personal-info ul li input {
     padding: .25rem;
-    background-color:  rgb(245, 245, 245);
+    background-color:  rgb(250, 249, 247);
     border: .5px solid rgb(89, 72, 11);
     display: block;
 }
 
 .preferences ul li input {
     padding: .25rem;
-    background-color:  rgb(245, 245, 245);
+    background-color:  rgb(250, 249, 247);
     border: .5px solid rgb(89, 72, 11);
     display: inline;
 }
@@ -221,13 +225,17 @@ main h2 {
     padding: 1rem;
 }
 
+main form {
+    padding-bottom: 3rem;
+}
+
 
 button {
     background-color: rgb(156, 155, 54);
     border-style: none;
     padding: .5rem;
     margin-top: 1rem;
-    color:  rgb(250, 250, 250);
+    color: rgb(250, 249, 247);
 }
 
 
@@ -235,17 +243,14 @@ button {
 
 	nav ul li {
 		display: inline;
-        padding-right: 2rem;
+        padding-right: 1rem;
+        font-size: .75rem;  
 	}
 
-    h1, h2, section.mainstory h2, section.secondary h2, section.tertiary h2, nav, p{
-        padding-left: .5rem;
-        padding-right: .5rem;
+    h2, section.mainstory h2, section.secondary h2, nav, p {
+        padding-right: 1rem;
+        padding-left: 1rem;
 	}
-
-    section.tertiary h2 {
-        margin: 0rem;
-    }
 
     .personal-info ul li input {
         display: inline;
@@ -255,16 +260,21 @@ button {
         padding-right: .5rem;
     }
 
-    nav {
-    margin: auto;
+    .personal-info, .preferences {
+    margin: 0rem 1rem 1rem;
     }
 }
 
 @media only screen and (min-width: 60em) {
 
+    p, section.mainstory h2, section.secondary h2, section.tertiary h2, nav, aside p, article h2 {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    
     div.home-container {
         max-width: 80em;
-        padding: 0 1em;
+        padding: 0 1rem;
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 1rem;
@@ -272,7 +282,7 @@ button {
 
     div.container {
         max-width: 60em;
-        padding: 0 1rem;
+        padding: 0rem 1rem;
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 1rem;
@@ -294,7 +304,12 @@ button {
         margin-top: 0;
     }
 
-    header, footer {
+    header {
+        grid-column: 1/3;
+        padding-left: 0rem;
+    }
+
+    footer {
         grid-column: 1/3;
         padding-left: 1rem;
     }
@@ -363,5 +378,52 @@ button {
     main.gallery h2 {
         padding: 0rem 0rem 1rem;
     }
+
+    h1 {
+        margin-left: 1rem;
+    }
+
+    nav {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(38, 33, 13);
+    }
+
+    p, nav ul li a, section.personal-info ul li label, section.preferences ul li label {
+        color: rgb(250, 249, 247);
+    }
+
+    h1 {
+        background-image: url("logo-dark.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    h1 img {
+        opacity: 0;
+    }
+
+    h2 {
+        color: rgb(156, 155, 54);
+    }
+
+    aside h2 {
+            color: rgb(156, 155, 54);
+    }
+
+    div.container, div.home-container, div.form {
+        background-color:  rgb(5, 5, 5);
+    }
     
+    section.personal-info, section.preferences, aside {
+        background-color:  rgb(22, 21, 21);
+    }
+
+    .preferences ul li input, .personal-info ul li input {
+        border-style: none;
+    }
 }

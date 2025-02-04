@@ -94,6 +94,10 @@ h2 {
     padding-bottom: .5rem;
 }
 
+h2.space-above {
+    padding-top: 1.5rem;
+}
+
 h2.tm-video-title {
     font-size: 2rem;
     padding-top: 2rem;
@@ -234,11 +238,16 @@ div.text-center {
     /*width of page content*/
 }
 
+/*row*/
 .row {
-    padding: 0rem 2.5rem;
+    padding: 0rem 1rem;
     margin-top: 0;
     justify-content: center;
 }
+.row-video-player {
+    padding: 0rem 1rem;
+}
+
 
 .position-relative-header {
     padding-top: 1.25rem;
@@ -468,11 +477,11 @@ p.mb-4 {
 }
 
 .tm-catalog-item {
-    max-width: 450px;
+    max-width: 310px;
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
-    padding-top: 1rem;
+    padding: 0rem;
     -webkit-box-shadow: 1px 1px 2px #989898, -1px -1px 4px #989898;
     box-shadow: 1px 1px 2px #989898, -1px -1px 4px #989898;
 }
@@ -497,7 +506,7 @@ p.mb-4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -546,7 +555,6 @@ p.mb-4 {
 
 .tm-catalog-item-description {
     flex: 1;
-    background-color: #FBFAF8;
 }
 
 .tm-categories-container {
@@ -745,6 +753,7 @@ input {
 
 .col-title {
     width: 100%;
+    padding: 0 2rem;
 }
 
 .col-main {
@@ -753,6 +762,7 @@ input {
     max-width: 920px;
     padding-bottom: .5rem;
     justify-content: left;
+    padding-left: 2rem;
 }
 
 .text-container {
@@ -806,6 +816,7 @@ nav.gallery {
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr 3fr;
     grid-column-gap: .5em;
+    
 }
 
 div.button {
@@ -986,7 +997,7 @@ p.white {
 
 /* MEDIA QUERIES BEGIN */
 
-@media (min-width: 992px) {
+@media (min-width: 992px) { /*anything larger than mobile size*/
     #tm-main-nav .nav-item {
         margin: 0rem 0rem 0rem 2rem;
     }
@@ -1082,6 +1093,12 @@ p.white {
 
     .tm-catalog-item-list {
         max-width: 924px;
+        justify-content: left;
+        column-gap: 1.5rem;
+    }
+
+    .tm-catalog-item {
+        max-width: 400px;
     }
 
     .tm-share-box {
@@ -1133,16 +1150,18 @@ p.white {
         /*horizontal*/
         display: grid;
         grid-column: 1/3;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 1em;
-        height: 3rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: .5rem;
+        height: 5rem;
+        padding: 0 2rem;
     }
 
     .col-main {
         /*LEFT COLUMN*/
         flex: 0 0 100%;
         margin-bottom: 0;
-        padding-right: 0rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
     .col-left {
@@ -1190,7 +1209,9 @@ p.white {
     }
 
     h3.space-above {
-        padding-top: 1rem;
+        padding: 1rem 2rem;
+        text-align: left;
+        width: 100%;
     }
 
     .tm-site-name {

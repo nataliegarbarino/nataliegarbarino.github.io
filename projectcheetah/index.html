@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Project Cheetah</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Cheetah</title>
@@ -24,8 +25,8 @@
                     <div class="row">
                         <div class="col-7 col-md-4">
                             <a href="index.html" class="tm-bg-black text-center tm-logo-container">
-                                <img src="logo/logo_w.svg" alt="script wordmark logo of the word cheetah."></a>
-                            <!--<h1 class="tm-site-name">Website Name</h1>-->
+                                <img src="logo/logo_b.svg" alt="script wordmark logo of the word cheetah."></a>
+                            <!--<h1 class="center">Website Name</h1>-->
                             </a>
                         </div>
                         <div class="col-5 col-md-8 ml-auto mr-0">
@@ -49,10 +50,7 @@
                                                 <a class="nav-link tm-nav-link" href="about.html">About</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="episode1.html">Docuseries</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="gallery.html">Gallery</a>
+                                                <a class="nav-link tm-nav-link" href="concept-z.html">Docuseries</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -64,8 +62,8 @@
             </div>
             <div class="tm-welcome-container tm-fixed-header tm-fixed-header-1">
                 <div class="text-center">
-                    <h1 class="tm-site-name">The Cheetah</h1>
-                    <h1 class="grey-subtitle">Human Powered Vehicle</h1>
+                    <!--<h1 class="center">Project</h1>-->
+                    <img src="logo/text_logo_w.svg" alt="script wordmark logo of the word cheetah."></a>
                     <!--<p class="tm-welcome-text">From Berkeley student project to world's fastest bike.</p>-->
                 </div>
             </div>
@@ -79,143 +77,111 @@
             <i id="tm-video-control-button" class="fas fa-pause"></i>
         </div>
 
-
         <!--Intro to cheetah section-->
-        <main>
-            <div class="background-white">
-                <div class="container-fluid position-relative">
-                    <!--Section 1: Introduction to cheetah-->
-                    <div class="row mb-5 pb-5">
-                        <div class="col-xl-8 col-lg-7">
-                            <!--CNN video?-->
-                            <!--Video player 1422x800-->
-                            <video width="1422" height="800" controls autoplay>
-                                <source src="video/gunnison_colorado.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+        <div class="row">
+            <div class="container-fluid position-relative">
+                <div class="text-container">
+                    <div class="col-left">
+                        <h2 class="black-no-space"> Meet the Cheetah</h2>
+                        <p class="pull-quote-black">"This is a short quote about the cheetah and its significance
+                            from an external reputable news/media source."</p>
+                        <p>Insert News Source Here</p>
+                        <button type="submit" class="btn rounded-0 btn-primary tm-btn-small">Learn More</button>
 
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="quote">
-                                <h2 class="section-title-center mb-4"> Meet the Cheetah</h2>
-                                <h3 class="pull-quote">"This is a short quote about the cheetah and its significance
-                                    from an external reputable news/media source."</h3>
-                                <p class="center">Insert News Source Here
-                            </div>
+                    </div>
 
-                        </div>
+                    <div class="col-right">
+                        <img src="img/docs/popular_science.jpeg"
+                            alt="Black cheetah bike and fairing on the cover Popular Science. The main cover line says 'the world's fastest bike.'">
+                            <figcaption>October 1993 — Cover of Popular Science</figcaption>
+                        <!--CNN video?-->
+                        <!-- Video player embedded — Youtube -->
+                        <!-- <div class="youtube-embed">
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/Os442rfWmRk?si=ydxEQY2BPwe4zqXv"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>-->
                     </div>
                 </div>
             </div>
 
             <!--TIMELINE/VIDEO MENU-->
             <div class="container-fluid position-relative">
-                <h2 class="section-title-left mb-4 tm-text-primary">Project Timeline</h2>
+                <div class="text-container">
+                    <h2 class="black">Engineering the Cheetah</h2>
 
-                <div class="row tm-catalog-item-list">
-                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/video/1.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                            <a href="episode1.html" class="position-absolute tm-img-overlay">
-                                <i class="fas fa-play tm-overlay-icon"></i>
-                            </a>
+                    <div class="row tm-catalog-item-list">
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/video/1.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <a href="concept-z.html" class="position-absolute tm-img-overlay">
+                                    <i class="fas fa-play tm-overlay-icon"></i>
+                                </a>
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Concept Z</h3>
+                                <p class="tm-catalog-item-text">Developing the first <span
+                                        class="tm-text-secondary">iteration</span> of the Cheetah.</p>
+                            </div>
                         </div>
-                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Concept Z</h3>
-                            <p class="tm-catalog-item-text">The first <span class="tm-text-secondary">prototype</span> of the Cheetah</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/video/2.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                            <!--<a href="episode1.html" class="position-absolute tm-img-overlay">
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/video/2.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <!--<a href="concept-z.html" class="position-absolute tm-img-overlay">
                             <i class="fas fa-play tm-overlay-icon"></i>-->
-                        </div>
+                            </div>
 
-                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Part 2</h3>
-                            <p class="tm-catalog-item-text">This is a summary of the contents of this
-                                section/video!
-                                Key information can be highlighted in a different color like <span
-                                    class="tm-text-secondary">this</span>!</p>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Securing Sponsors</h3>
+                                <p class="tm-catalog-item-text">The team secures funds, workspace, and materials
+                                    from
+                                    aerospace adhesive company <span class="tm-text-secondary">Dexter Hysol</span>.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/video/3.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                            <!--<a href="episode1.html" class="position-absolute tm-img-overlay">
-                                <i class="fas fa-play tm-overlay-icon"></i>-->
-                            </a>
-                        </div>
-                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Part 3</h3>
-                            <p class="tm-catalog-item-text">This is a summary of the contents of this
-                                section/video!
-                                Key information can be highlighted in a different color like <span
-                                    class="tm-text-secondary">this</span>!</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/video/4.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                            <!--<a href="episode1.html" class="position-absolute tm-img-overlay">
-                            <i class="fas fa-play tm-overlay-icon"></i>-->
-                        </div>
-                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Part 4</h3>
-                            <p class="tm-catalog-item-text">Hey look! It's another summary of the contents
-                                of
-                                this
-                                section/video! Who would have guessed!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/video/5.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                            <!--<a href="episode1.html" class="position-absolute tm-img-overlay">
-                            <i class="fas fa-play tm-overlay-icon"></i>-->
-                        </div>
-                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Part 5</h3>
-                            <p class="tm-catalog-item-text">This is a summary of the contents of this
-                                section/video!
-                                <span class="tm-text-secondary">You must be getting pretty bored from
-                                    reading
-                                    the
-                                    same filler crap over and over again</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/video/6.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                            <a href="episode1.html" class="position-absolute tm-img-overlay">
-                                <i class="fas fa-play tm-overlay-icon"></i>
-                            </a>
-                        </div>
-                        <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                            <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Part 6</h3>
-                            <p class="tm-catalog-item-text">This is a summary of the contents of this
-                                section/video!
-                                <span class="tm-text-secondary">I promise, the next one will be more
-                                    exciting.</span>
-                            </p>
+                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="img/video/3.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                <a href="the-record.html" class="position-absolute tm-img-overlay">
+                                    <!--<i class="fas fa-play tm-overlay-icon"></i>-->
+                                </a>
+                            </div>
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">The Record</h3>
+                                <p class="tm-catalog-item-text">This is a summary of the contents of this
+                                    section/video!
+                                    Key information can be highlighted in a different color like <span
+                                        class="tm-text-secondary">this</span>!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
-    </div> <!-- tm-content-container-->
+        </div> <!-- tm-content-container-->
     </div><!--fluid ends-->
-    </div> <!--background color ends-->
-    </main>
+
+    <!--footer links-->
+    <div class="container-fluid px-0">
+        <!--Section 1: VIDEO-->
+        <div class="row">
+            <div class="col-title">
+                <h3 class="space-above">Quick Links</h3>
+                <ul class="list-unstyled tm-footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="concept-z.html">Docuseries</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="the-record.html">The record</a></li>
+                </ul>
+            </div>
+        </div><!--row-->
+    </div><!--container-fluid-->
 
 
     <footer class="row pt-5">
         <p class="text-credits">
-            Copyright 2024 The Cheetah Project <br>For educational purposes only <br>Adapted by Natalie Garbarino |
+            Copyright 2025 Project Cheetah<br>For educational purposes only <br>Adapted by Natalie Garbarino |
             Template courtesy <a href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo.</a>
         </p>
     </footer>

@@ -1177,6 +1177,7 @@ p.white {
         flex: 0 0 100%;
         margin-bottom: 0;
         padding-right: 0rem;
+        margin-top: 2rem;
     }
 
     .col-right {

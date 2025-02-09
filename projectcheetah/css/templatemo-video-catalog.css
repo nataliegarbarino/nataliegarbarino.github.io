@@ -56,6 +56,11 @@ a:hover {
 img {
     width: 100%;
     display: block;
+    border-radius: 5px;
+}
+
+img.space-above {
+margin-top: 1rem;
 }
 
 figcaption {
@@ -63,6 +68,10 @@ figcaption {
     line-height: 1.2rem;
     color: var(--carbon-fiber2);
     padding: .5rem 0rem 2rem;
+}
+
+a {
+    color: var(--carbon-fiber2);
 }
 
 p {
@@ -87,7 +96,7 @@ h1 {
     font-weight: 300;
     text-transform: uppercase;
     font-style: normal;
-    font-size: calc(2vw + 4vh + 2vmin);
+    font-size: min(8vw, 4rem);
     /*text-transform: uppercase;*/
     letter-spacing: .15rem;
     color: var(--cheetah);
@@ -168,14 +177,24 @@ p.pull-quote-black {
     font-size: 1.2rem;
     line-height: 1.9rem;
     color: var(--carbon-fiber);
+    margin-top: 1rem;
 }
+
+p.pull-quote-gold {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    color: var(--dunes);
+    margin-top: 1rem;
+}
+
 
 .rectangle {
     background: var(--carbon-fiber);
     border-radius: 15px;
     padding: 2rem;
     margin-bottom: 2rem;
-    border: 1px solid var(--dunes);
+    /*border: 1px solid var(--dunes);*/
     width: 100%;
 }
 
@@ -208,7 +227,7 @@ h3.dark {
     top: 0;
     left: 0;
     padding: 0rem 1rem;
-    background-color: var(--fairing);
+   /* background-color: var(--carbon-fiber);*/
     /*
     -webkit-box-shadow: 1px 1px 2px #989898, -1px -1px 4px #989898;
     box-shadow: 1px 1px 2px #989898, -1px -1px 4px #989898;
@@ -281,14 +300,14 @@ div.text-center {
 
 .section-container {
     padding-top: 2.5rem;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     /*width of page content*/
 }
 
 /*row*/
 .row {
-    padding: 0rem 1rem;
+    padding: 0rem .5rem;
     margin-top: 0;
     justify-content: center;
 }
@@ -328,7 +347,7 @@ div.text-center {
 /*logo and drop-down menu buttons*/
 .tm-bg-black {
     /*background-color: rgba(0,0,0,0.5);*/
-    color: var(--carbon-fiber);
+    color: var(--fairing);
 }
 
 .tm-text-secondary {
@@ -336,7 +355,7 @@ div.text-center {
 }
 
 .tm-nav-link {
-    color: var(--carbon-fiber);
+    color: var(--fairing);
     font-size: .9rem;
     font-weight: 350;
     letter-spacing: .2rem;
@@ -350,7 +369,7 @@ div.text-center {
 #tm-main-nav .nav-item:hover .nav-link {
     /*border-bottom: 1px solid #0E1013;*/
     font-weight: 600;
-    color: var(--carbon-fiber);
+    color: var(--fairing);
 }
 
 .btn {
@@ -361,11 +380,11 @@ div.text-center {
 }
 
 .btn-primary {
-    background-color: var(--dunes);
+    background-color: var(--carbon-fiber);
 }
 
 .btn-primary:hover {
-    background-color: var(--cheetah);
+    background-color: var(--carbon-fiber1);
 }
 
 /*
@@ -517,7 +536,7 @@ p.mb-4 {
 }
 
 .tm-catalog-item {
-    max-width: 900px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
@@ -637,6 +656,7 @@ p.mb-4 {
     justify-content: center;
 }
 
+/*TOP MENU*/
 .nav-item.active>.tm-paging-link,
 .nav-item:hover>.tm-paging-link {
     background-color: #CCC;
@@ -665,9 +685,9 @@ footer {
     font-size: .7rem;
     line-height: 1.25rem;
     font-style: italic;
-    color: #A0A6A0;
+    color: var(--carbon-fiber2);
     padding-top: .5rem;
-    border-top: .5px solid #A0A6A0;
+    border-top: .5px solid var(--carbon-fiber2);
     text-transform: uppercase;
 }
 
@@ -810,7 +830,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0rem 2rem .5rem;
+    padding: 0rem 1.75rem .5rem;
     margin-top: 0rem;
     /*border-bottom: 3px solid #eee;*/
 }
@@ -885,7 +905,7 @@ nav.gallery {
     /*background-image: url(../img/stripe_header.jpg);*/
     height: 6rem;
     position: relative;
-    background-color: var(--fairing);
+    background-color: var(--carbon-fiber);
 }
 
 .tm-fixed-header-3 {
@@ -1102,6 +1122,11 @@ p.white {
 }
 
 @media (max-width: 640px) {
+
+    h1 {
+    font-size: 3.25rem;
+    }
+
     .tm-subscribe-form {
         flex-direction: column;
         align-items: stretch;
@@ -1137,7 +1162,6 @@ p.white {
         grid-template-columns: repeat(6, 1fr);
         grid-gap: .5rem;
         height: 5rem;
-        padding: 0 2rem;
     }
 
     .col-main {

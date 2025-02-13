@@ -56,19 +56,11 @@ a:hover {
 img {
     width: 100%;
     display: block;
+    box-shadow: 1px 1px 5px var(--carbon-fiber3, .1);
 }
 
-img.shadow {
-    width: 100%;
-    display: block;
-    -webkit-box-shadow: 1px 1px 2px var(--carbon-fiber), -1px -1px 4px var(--carbon-fiber);
-    box-shadow: 1px 1px 2px var(--carbon-fiber), -1px -1px 4px var(--carbon-fiber);
-}
-
-img.space-above {
-margin-top: 1rem;
--webkit-box-shadow: 1px 1px 2px var(--carbon-fiber), -1px -1px 4px var(--carbon-fiber);
-box-shadow: 1px 1px 2px var(--carbon-fiber), -1px -1px 4px var(--carbon-fiber);
+img.no-shadow {
+    box-shadow: none;
 }
 
 figcaption {
@@ -107,21 +99,12 @@ h1 {
     font-size: min(8vw, 4rem);
     letter-spacing: .15rem;
     color: var(--cheetah);
-    margin-top: 4rem;
 }
 
 h1.space-below-above {
     padding-bottom: 1rem;
-    padding-top: 5rem;
 }
 
-h1.tm-site-name {
-    text-align: center;
-    /* See:
-     * https://codepen.io/CrocoDillon/pen/jgmwt
-     * For some math behind this
-     */
-}
 
 h2 {
     font-family: "neue-haas-grotesk-display", sans-serif;
@@ -171,30 +154,6 @@ h3.aside {
     width: 100%;
 }
 
-p.pull-quote {
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.9rem;
-    color: var(--fairing);
-}
-
-p.pull-quote-black {
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.9rem;
-    color: var(--carbon-fiber);
-    margin-top: 1rem;
-}
-
-p.pull-quote-gold {
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.9rem;
-    color: var(--dunes);
-    margin-top: 1rem;
-}
-
-
 .rectangle {
     background: var(--carbon-fiber);
     border-radius: 15px;
@@ -205,12 +164,14 @@ p.pull-quote-gold {
 }
 
 h4 {
-    font-size: .85rem;
-    font-weight: 300;
-    line-height: 1.25rem;
-    color: var(--carbon-fiber);
-    padding: 0rem 0rem 0rem;
-    margin-bottom: 0;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    color: var(--dunes);
+    margin-top: 1rem;
+}
+
+h4.white {
+    color: var(--fairing);
 }
 
 h2.white,
@@ -234,10 +195,6 @@ h3.dark {
     left: 0;
     padding: 0rem 1rem;
    /* background-color: var(--carbon-fiber);*/
-    /*
-    -webkit-box-shadow: 1px 1px 2px #989898, -1px -1px 4px #989898;
-    box-shadow: 1px 1px 2px #989898, -1px -1px 4px #989898;
-    */
 }
 
 .col-5 {
@@ -362,9 +319,9 @@ div.text-center {
 
 .tm-nav-link {
     color: var(--fairing);
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 350;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
 }
 
 #tm-main-nav .nav-item .nav-link {
@@ -549,7 +506,7 @@ p.mb-4 {
     flex-direction: column;
     margin-bottom: 64px;
     padding: 0rem;
-    box-shadow: 1px 1px 5px var(--carbon-fiber3), -1px -1px 5px var(--carbon-fiber3);
+    box-shadow: 1px 1px 5px var(--carbon-fiber3, .1);
     background-color: var(--aluminum);
 }
 
@@ -754,12 +711,13 @@ footer {
 div.youtube-embed {
     display: flex;
     justify-content: center;
-    box-shadow: 1px 1px 2px var(--carbon-fiber2), -1px -1px 4px var(--carbon-fiber2);
 }
 
 iframe {
     aspect-ratio: 16 / 9;
     width: 100% !important;
+    border: 0px;
+    box-shadow: 1px 1px 5px var(--carbon-fiber3, .1);
 }
 
 
@@ -939,9 +897,9 @@ nav.gallery {
 
 .tm-fixed-header-2 {
     /*background-image: url(../img/stripe_header.jpg);*/
-    height: 6rem;
     position: relative;
     background-color: var(--carbon-fiber);
+    padding-top: 10rem;
 }
 
 .tm-fixed-header-3 {
@@ -964,7 +922,7 @@ p.tm-catalog-item-text {
 }
 
 p.white {
-    color: #eaeaea;
+    color: var(--fairing);
 }
 
 
@@ -1324,9 +1282,7 @@ p.white {
 }
 
 .timeline-content {
-    /*background: #021a32;
-  -webkit-box-shadow: 2px 2px 5px #1a1a1a, -2px -2px 5px #0E1013;
-          box-shadow: 2px 2px 5px #1a1a1a, -2px -2px 5px #0E1013;*/
+    /*background: #021a32;*/
     color: #0E1013;
     transition: 0.4s ease;
     overflow-wrap: break-word !important;

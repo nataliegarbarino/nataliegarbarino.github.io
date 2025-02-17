@@ -22,6 +22,7 @@ https://templatemo.com/tm-552-video-catalog
     /*var(--carbon-fiber3);*/
     --aluminum: #E6E8E6;
     /*var(--aluminum);*/
+    --hot-orange: RGB(184, 64, 24);
 }
 
 html {
@@ -32,9 +33,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family:"neue-haas-grotesk-display", sans-serif;
-    font-weight:300;
-    font-style:normal;    
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     /*book*/
     font-size: 1rem;
     line-height: 2em;
@@ -61,6 +62,12 @@ img {
 
 img.no-shadow {
     box-shadow: none;
+}
+
+img.icon {
+    box-shadow: none;
+    padding-bottom: 1rem;
+    width: 50%;
 }
 
 figcaption {
@@ -155,7 +162,7 @@ h3.aside {
 }
 
 .rectangle {
-    background: var(--carbon-fiber);
+    background: var(--carbon-fiber3);
     border-radius: 15px;
     padding: 2rem;
     /*border: 1px solid var(--dunes);*/
@@ -167,24 +174,28 @@ h4 {
     font-size: 1.2rem;
     line-height: 1.9rem;
     color: var(--dunes);
-    margin-top: 1rem;
+    margin: 1rem 0rem;
+}
+
+h4.no-space-above {
+    margin: 0rem;
+    color: var(--carbon-fiber1);
 }
 
 h4.white {
     color: var(--fairing);
+margin-bottom: 1rem;
+
 }
 
-h2.white,
-p.white,
-h4.white,
-h3.white {
-    color: var(--fairing);
-}
-
-p.dark,
-h4.dark,
-h3.dark {
+h5 {
+    font-weight: 600;
     color: var(--carbon-fiber);
+    font-size: .875rem;
+    letter-spacing: .05rem;
+    line-height: 1.85rem;
+    text-transform: uppercase;
+    margin-bottom: 0rem;
 }
 
 .tm-site-header {
@@ -194,7 +205,7 @@ h3.dark {
     top: 0;
     left: 0;
     padding: 0rem 1rem;
-   /* background-color: var(--carbon-fiber);*/
+    /* background-color: var(--carbon-fiber);*/
 }
 
 .col-5 {
@@ -231,7 +242,7 @@ h1.tm-site-name {
 }
 
 div.text-center {
-    width:80%;
+    width: 80%;
     margin: auto;
     padding: 7rem 2rem;
 }
@@ -343,7 +354,30 @@ div.text-center {
     cursor: pointer;
 }
 
-/*LEARN MORE BUTTON*/
+/*BUTTONS*/
+
+a.underline {
+    transition: background-color 0.3s ease;
+}
+
+a.underline:hover {
+    text-decoration: underline;
+}
+
+a.yellow-highlight {
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    color: var(--carbon-fiber3);
+}
+
+a.yellow-highlight:hover {
+    background-color: var(--cheetah);
+    color: var(--carbon-fiber);
+}
+
 .btn-primary {
     background-color: var(--carbon-fiber);
 }
@@ -834,6 +868,13 @@ input {
     margin-bottom: 3rem;
 }
 
+.col-thirds {
+    flex: 0 0 33.33%;
+    max-width: 920px;
+    justify-content: left;
+    padding-right: 1rem;
+}
+
 .col-video {
     /*LEFT COLUMN*/
     flex: 0 0 66.6%;
@@ -1120,7 +1161,7 @@ p.white {
         margin-bottom: 0;
         padding-right: 0rem;
     }
-    
+
     .col-summary {
         /*RIGHT COLUMN*/
         flex: 0 0 80%;
@@ -1131,7 +1172,7 @@ p.white {
 @media (max-width: 640px) {
 
     h1 {
-    font-size: 3.25rem;
+        font-size: 3.25rem;
     }
 
     h2.black-no-space {
@@ -1196,6 +1237,13 @@ p.white {
         /*RIGHT COLUMN*/
         flex: 0 0 100%;
         padding-left: 0rem;
+    }
+
+    .col-thirds {
+        flex: 0 0 100%;
+        max-width: 920px;
+        margin-bottom: 3rem;
+        justify-content: left;
     }
 
     .text-container {

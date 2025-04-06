@@ -33,7 +33,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-family: "aktiv-grotesk", sans-serif;
     font-weight: 300;
     font-style: normal;
     /*book*/
@@ -58,6 +58,7 @@ img {
     width: 100%;
     display: block;
     box-shadow: 1px 1px 5px var(--carbon-fiber3, .1);
+    border-radius: 15px;
 }
 
 img.no-shadow {
@@ -68,6 +69,12 @@ img.icon {
     box-shadow: none;
     padding-bottom: 1rem;
     width: 50%;
+    border-radius: 0px;
+}
+
+img.unrounded {
+    border-radius: 0px;
+    box-shadow: none;
 }
 
 figcaption {
@@ -81,9 +88,14 @@ a {
     color: var(--carbon-fiber);
 }
 
+a.gray {
+    color: var(--carbon-fiber2);
+    text-decoration: underline;
+}
+
 p {
     font-size: 1rem;
-    line-height: 1.85rem;
+    line-height: 1.6rem;
 }
 
 p.center {
@@ -99,12 +111,12 @@ p.credits {
 }
 
 h1 {
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 300;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 200;
     text-transform: uppercase;
     font-style: normal;
     font-size: min(8vw, 4rem);
-    letter-spacing: .15rem;
+    letter-spacing: .1rem;
     color: var(--cheetah);
 }
 
@@ -114,8 +126,8 @@ h1.space-below-above {
 
 
 h2 {
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 650;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 800;
     font-style: normal;
     font-size: 1.65rem;
     color: var(--fairing);
@@ -142,7 +154,7 @@ h2.white {
 }
 
 h3 {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--dunes);
     font-size: 1.1rem;
     letter-spacing: .05rem;
@@ -171,10 +183,11 @@ h3.aside {
 }
 
 h4 {
-    font-size: 1.2rem;
-    line-height: 1.9rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
     color: var(--dunes);
-    margin: 1rem 0rem;
+    margin: 1.6rem 0rem;
 }
 
 h4.no-space-above {
@@ -184,7 +197,7 @@ h4.no-space-above {
 
 h4.white {
     color: var(--fairing);
-margin-bottom: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -341,8 +354,8 @@ div.text-center {
 
 #tm-main-nav .nav-item.active .nav-link,
 #tm-main-nav .nav-item:hover .nav-link {
-    /*border-bottom: 1px solid #0E1013;*/
-    font-weight: 600;
+    border-bottom: 1px solid var(--fairing);
+    /*font-weight: 600;*/
     color: var(--fairing);
 }
 
@@ -542,10 +555,12 @@ p.mb-4 {
     padding: 0rem;
     box-shadow: 1px 1px 5px var(--carbon-fiber3, .1);
     background-color: var(--aluminum);
+    border-radius: 15px;
 }
 
 .tm-thumbnail-container {
     overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .tm-thumbnail-container img {
@@ -681,9 +696,8 @@ footer {
 
 .text-credits {
     text-align: center;
-    font-size: .7rem;
+    font-size: .6rem;
     line-height: 1.25rem;
-    font-style: italic;
     color: var(--carbon-fiber2);
     padding-top: .5rem;
     border-top: .5px solid var(--carbon-fiber2);
@@ -751,6 +765,7 @@ iframe {
     aspect-ratio: 16 / 9;
     width: 100% !important;
     border: 0px;
+    border-radius: 15px;
     box-shadow: 1px 1px 5px var(--carbon-fiber3, .1);
 }
 

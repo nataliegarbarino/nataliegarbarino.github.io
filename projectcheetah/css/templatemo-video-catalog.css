@@ -58,7 +58,7 @@ img {
     width: 100%;
     display: block;
     box-shadow: 1px 1px 5px var(--carbon-fiber3, .1);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 img.no-shadow {
@@ -78,9 +78,12 @@ img.unrounded {
 }
 
 figcaption {
+    font-family: "merriweather", serif;
+font-weight: 300;
+font-style: normal;
     font-size: .8rem;
     line-height: 1.2rem;
-    color: var(--carbon-fiber2);
+    color: var(--carbon-fiber3);
     padding: .5rem 0rem 2rem;
 }
 
@@ -112,12 +115,13 @@ p.credits {
 
 h1 {
     font-family: aktiv-grotesk, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     text-transform: uppercase;
     font-style: normal;
     font-size: min(8vw, 4rem);
     letter-spacing: .1rem;
     color: var(--cheetah);
+    /*text-shadow: -.15rem .15rem .05rem rgba(184, 64, 24, 0.895), -.33rem .33rem .1rem rgba(35, 27, 191, 0.629);*/
 }
 
 h1.space-below-above {
@@ -146,6 +150,7 @@ h2.black-no-space {
     padding: 0rem;
     border-top: none;
     color: var(--carbon-fiber);
+    text-shadow: -.05rem .05rem .02rem rgba(78, 78, 78, 0.098);
 }
 
 
@@ -175,7 +180,7 @@ h3.aside {
 
 .rectangle {
     background: var(--carbon-fiber3);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 2rem;
     /*border: 1px solid var(--dunes);*/
     width: 100%;
@@ -183,7 +188,9 @@ h3.aside {
 }
 
 h4 {
-    font-weight: 400;
+    font-family: "merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 1.1rem;
     line-height: 1.6rem;
     color: var(--dunes);
@@ -343,9 +350,10 @@ div.text-center {
 
 .tm-nav-link {
     color: var(--fairing);
-    font-size: .8rem;
+    font-size: .75rem;
     font-weight: 350;
     letter-spacing: .1rem;
+    line-height: 1.2rem;
 }
 
 #tm-main-nav .nav-item .nav-link {
@@ -555,12 +563,12 @@ p.mb-4 {
     padding: 0rem;
     box-shadow: 1px 1px 5px var(--carbon-fiber3, .1);
     background-color: var(--aluminum);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .tm-thumbnail-container {
     overflow: hidden;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .tm-thumbnail-container img {
@@ -765,7 +773,7 @@ iframe {
     aspect-ratio: 16 / 9;
     width: 100% !important;
     border: 0px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 1px 1px 5px var(--carbon-fiber3, .1);
 }
 
@@ -1102,10 +1110,11 @@ p.white {
         border-radius: 5px;
         border-top-right-radius: 0;
         padding: 1rem 1.5rem;
+        width: 100%;
     }
 
     .nav-item {
-        margin-bottom: .75rem;
+        margin-bottom: 1rem;
     }
 
     .navbar-toggler {

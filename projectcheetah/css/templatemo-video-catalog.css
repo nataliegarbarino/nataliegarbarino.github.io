@@ -1240,7 +1240,7 @@ nav.gallery {
 .tm-fixed-header-3 {
     position: relative;
     background-color: var(--fairing);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/racetrack_conceptz.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/concept_z/header_racetrack_conceptz.jpg);
     background-color: var(--bay-blue);
     padding-top: 5rem;
     height: 30rem;

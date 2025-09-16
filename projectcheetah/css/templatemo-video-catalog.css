@@ -54,51 +54,99 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/*ANIMATED SLIDESHOW*/
+/*ANIMATED MARQUEE*/
+.marquee {
+    font-size: 5rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 5rem;
+    color: var(--cheetah)
+}
 
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/*END OF ANIMATED MARQUEE*/
+
+
+/*ANIMATED SLIDESHOW*/
 div.position-relative {
     height: 50rem;
     background-color: var(--carbon-fiber);
 }
 
+div.position-relative-narrow {
+    height: 50rem;
+    background-color: var(--carbon-fiber);
+}
+
 div.imgbox {
-  display: flex; 
-  align-items: top center;
-  height: 100%;
-  width: 100%;
-  background-position: top;
-  background-size: cover;
+    display: flex;
+    align-items: top center;
+    height: 100%;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
 }
 
-#img1{
-  position: absolute;
-  background-position: center;
-  z-index: 3;
-  animation: xfade 15s -0s infinite;
-  animation-timing-function: ease-in-out;
+#img1 {
+    position: absolute;
+    background-position: center;
+    z-index: 3;
+    animation: xfade 15s -0s infinite;
+    animation-timing-function: ease-in-out;
 }
 
-#img2{
-  position: absolute;
-  z-index: 2;
-  animation: xfade 15s -5s infinite;
-  animation-timing-function: ease-in-out;
+#img2 {
+    position: absolute;
+    z-index: 2;
+    animation: xfade 15s -5s infinite;
+    animation-timing-function: ease-in-out;
 }
 
-#img3{
-  position: absolute;
-  z-index: 1;
-  animation: xfade 15s -10s infinite;
-  animation-timing-function: ease-in-out;
+#img3 {
+    position: absolute;
+    z-index: 1;
+    animation: xfade 15s -10s infinite;
+    animation-timing-function: ease-in-out;
 }
 
-@keyframes xfade{
+@keyframes xfade {
+    0% {
+        opacity: 0;
+    }
 
-     0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+    20% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    53% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /*END OF ANIMATED SLIDESHOW*/
@@ -280,11 +328,11 @@ div.text-below h3 {
 
 a {
     transition: all 0.3s ease;
-    color: var(--carbon-fiber2);
+    color: var(--carbon-fiber);
 }
 
 a:hover {
-    color: var(--cheetah);
+    color: var(--carbon-fiber2);
     text-decoration: none;
 }
 
@@ -301,8 +349,8 @@ img.no-shadow {
 
 img.icon {
     box-shadow: none;
-    padding-bottom: 1rem;
-    width: 75%;
+    padding-bottom: 2rem;
+    width: 95%;
     border-radius: 0rem;
 }
 
@@ -311,8 +359,26 @@ img.unrounded {
     box-shadow: none;
 }
 
+img.circle {
+    width: 100%;
+    border-radius: 5rem;
+}
+
+div.fill-container {
+    height: 100%;
+    width: 100%;
+    background-color: var(--bay-blue);
+    background-image: url(../img/colorado/team_crouching.jpg);
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    /*background-size: cover;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 figcaption {
-    font-family: "Roboto Mono", monospace;
+    font-family: "roboto mono", monospace;
     font-weight: 400;
     font-style: normal;
     font-size: .8rem;
@@ -328,6 +394,14 @@ p {
     color: var(--carbon-fiber1);
 }
 
+p.no-space-after {
+    margin-bottom: 0rem;
+}
+
+p span {
+    font-style: italic;
+}
+
 p.center {
     text-align: center;
 }
@@ -340,11 +414,21 @@ p.credits {
     margin-bottom: 1rem;
 }
 
+blockquote p {
+    font-family: "Archivo", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.65rem;
+    line-height: 2.2rem;
+    letter-spacing: .05rem;
+    text-align: left;
+    color: var(--carbon-fiber);
+}
+
 h1 {
     font-family: "Archivo", sans-serif;
     font-weight: 200;
-    font-style: normal;
-    font-size: min(8vw, 4rem);
+    font-size: min(9vw, 5rem);
     line-height: 100%;
     letter-spacing: .1rem;
     color: var(--fairing);
@@ -374,8 +458,13 @@ h2 {
     font-size: 2rem;
     letter-spacing: .05rem;
     padding-bottom: 1rem;
-    color: var(--bay-blue);
+    color: var(--carbon-fiber);
     text-align: left;
+}
+
+h2 span {
+    font-style: italic;
+    color: var(--carbon-fiber2);
 }
 
 h2.no-space {
@@ -387,7 +476,14 @@ h2.space-before {
     padding-top: 1rem;
 }
 
-h2.icon {
+h2.decorative {
+    font-size: 7.5rem;
+    letter-spacing: -1rem;
+    line-height: 6.5rem;
+    text-align: right;
+}
+
+h2.quote {
     font-size: 20rem;
     margin-top: 7rem;
     line-height: 0rem;
@@ -421,12 +517,13 @@ h3.aside {
 }
 
 .rectangle {
-    background: var(--carbon-fiber3);
+    background: var(--cheetah);
     border-radius: .25rem;
-    padding: 2rem;
+    padding: 1rem;
+    margin-top: 3rem;
     /*border: 1px solid var(--dunes);*/
     width: 100%;
-    aspect-ratio: auto 7/4;
+    aspect-ratio: auto 15/.5;
 }
 
 h4 {
@@ -448,7 +545,10 @@ h4.space-above {
 
 div.background-dark h4.space-above,
 div.background-dark h4.no-border,
-div.background-dark h2 {
+div.background-dark h2,
+div.background-mid h2,
+div.background-mid blockquote p,
+div.background-dark blockquote p {
     color: var(--fairing);
 }
 
@@ -496,7 +596,7 @@ h5 {
     width: 100%;
     height: 100%;
     display: flex;
-   /* padding-top: 3rem;*/
+    /* padding-top: 3rem;*/
     justify-content: center;
     flex-direction: column;
     z-index: 999;
@@ -512,9 +612,9 @@ div.text-center {
 
 .tm-welcome-text {
     font-family: "Roboto Mono", monospace;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.75rem;
     padding-top: .5rem;
     color: var(--fairing);
@@ -579,7 +679,9 @@ div.text-center {
     padding-bottom: 0rem;
 }
 
-.background-color {
+.background-mid {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/colorado/six_mile_lane2.jpg);
+    background-position: center;
     background-color: var(--cheetah);
     padding-bottom: 0rem;
 }
@@ -633,36 +735,35 @@ a.underline:hover {
     text-decoration: underline;
 }
 
-a.yellow-highlight {
-    font-family: "Roboto", sans-serif;
+a.highlight {
+    font-family: "roboto mono", monospace;
+    font-size: .85rem;
     font-weight: 400;
     padding: .25rem .2rem .05rem;
     transition: color 0.1s ease-out;
     color: var(--carbon-fiber);
 }
 
-a.yellow-highlight:hover {
-    color: var(--hot-orange);
+a.highlight:hover {
+    color: var(--carbon-fiber2);
 }
 
 a.btn {
-    font-family: "Archivo", sans-serif;
-    font-size: .75rem;
-    font-weight: 500;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    color: var(--bay-blue);
+    font-family: "roboto mono", monospace;
+    font-size: .85rem;
+    font-weight: 400;
+    color: var(--carbon-fiber);
 
     margin-top: .5rem;
     margin-bottom: 1rem;
     padding: 1rem 2rem .9rem;
-    border: 1px solid var(--bay-blue);
+    border: 1px solid var(--carbon-fiber);
     background-color: var(--fairing);
     cursor: pointer;
 }
 
 a.btn:hover {
-    background-color: var(--bay-blue);
+    background-color: var(--carbon-fiber);
     color: var(--fairing);
 }
 
@@ -1135,6 +1236,14 @@ div.wide {
     padding: 5rem 1.75rem 5rem;
 }
 
+div.wide-unpadded {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 1200px;
+    padding: 0rem 0rem 0rem 1.75rem;
+}
+
 .col-left {
     /*LEFT COLUMN*/
     flex: 0 0 50%;
@@ -1146,29 +1255,40 @@ div.wide {
     padding-left: 1.5rem;
 }
 
-div.wide-col-right {
-    /*LEFT COLUMN*/
-    flex: 0 0 50%;
+.col-right-caption {
+    /*RIGHT COLUMN*/
+    flex: 0 0 60%;
+    max-width: 25rem;
     padding-left: 1.5rem;
 }
 
 .col-thirds {
     flex: 0 0 33.33%;
     max-width: 57.5rem;
-    margin: auto;
     padding-right: 1.5rem;
+}
+
+.col-thirds-last {
+    flex: 0 0 33.33%;
+    max-width: 57.5rem;
+    padding-right: 0rem;
 }
 
 .col-forty {
     /*LEFT COLUMN*/
     flex: 0 0 40%;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
 }
 
 .col-sixty {
     /*RIGHT COLUMN*/
     flex: 0 0 60%;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
+}
+
+div.text-padded-left {
+    float: right;
+    padding: 5rem 0rem;
 }
 
 .col-aside-wide {
@@ -1176,7 +1296,7 @@ div.wide-col-right {
     flex: 0 0 25%;
     max-width: 57.5rem;
     align-content: top;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     padding-bottom: 3rem;
 }
 
@@ -1202,7 +1322,8 @@ nav.gallery {
 
 .tm-fixed-header-1 .overlay,
 .tm-fixed-header-2 .overlay,
-.tm-fixed-header-3 .overlay {
+.tm-fixed-header-3 .overlay,
+.tm-fixed-header-4 .overlay {
     top: 0;
     left: 0;
     width: 100%;
@@ -1230,9 +1351,9 @@ nav.gallery {
 
 .tm-fixed-header-2 {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/colorado/header_six_mile_lane.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/gears.jpg);
     background-color: var(--bay-blue);
-    padding-top: 5rem;
+    padding-top: 3rem;
     height: 30rem;
 }
 
@@ -1241,7 +1362,23 @@ nav.gallery {
     background-color: var(--fairing);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/concept_z/header_racetrack_conceptz.jpg);
     background-color: var(--bay-blue);
-    padding-top: 5rem;
+    padding-top: 3rem;
+    height: 30rem;
+}
+
+.tm-fixed-header-4 {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/docs/header_newspaper.jpg);
+    background-color: var(--bay-blue);
+    padding-top: 3rem;
+    height: 30rem;
+}
+
+.tm-fixed-header-5 {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/sixmilelane_road_header.jpg);
+    background-color: var(--bay-blue);
+    padding-top: 3rem;
     height: 30rem;
 }
 
@@ -1449,6 +1586,10 @@ p.white {
     div.text-center {
         width: 100%;
     }
+
+    div.fill-container {
+        height: 23rem;
+    }
 }
 
 @media (max-width: 40rem) {
@@ -1470,6 +1611,12 @@ p.white {
         padding-left: 0rem;
     }
 
+    div.text-padded-left {
+        float: left;
+        padding: 5rem 1.75rem 2rem;
+        width: 100%;
+        max-width: none;
+    }
 
     h1 {
         font-size: 4rem;
@@ -1536,6 +1683,15 @@ p.white {
         padding: 5rem 1.75rem 5rem;
     }
 
+    div.wide-unpadded {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        max-width: 1200px;
+        padding: 0rem;
+    }
+
+
     .col-left {
         /*LEFT COLUMN*/
         flex: 0 0 100%;
@@ -1549,6 +1705,14 @@ p.white {
         padding-left: 0rem;
     }
 
+    .col-right-caption {
+        /*RIGHT COLUMN*/
+        flex: 0 0 100%;
+        max-width: none;
+        padding-left: 0rem;
+        padding-top: 1.5rem
+    }
+
     .col-thirds {
         flex: 0 0 100%;
         margin-bottom: 3rem;
@@ -1557,11 +1721,21 @@ p.white {
         justify-content: left;
     }
 
+    .col-thirds-last {
+        flex: 0 0 100%;
+        margin-bottom: 3rem;
+        justify-content: left;
+    }
+
     img.icon {
         width: 30%;
     }
 
-    h2.icon {
+    h2.decorative{
+        text-align: left;
+    }
+
+    h2.quote {
         font-size: 20rem;
         margin-top: 7rem;
         line-height: 0rem;

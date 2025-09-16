@@ -1323,7 +1323,8 @@ nav.gallery {
 .tm-fixed-header-1 .overlay,
 .tm-fixed-header-2 .overlay,
 .tm-fixed-header-3 .overlay,
-.tm-fixed-header-4 .overlay {
+.tm-fixed-header-4 .overlay,
+.tm-fixed-header-5 .overlay {
     top: 0;
     left: 0;
     width: 100%;
@@ -1360,7 +1361,7 @@ nav.gallery {
 .tm-fixed-header-3 {
     position: relative;
     background-color: var(--fairing);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/concept_z/header_racetrack_conceptz.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/header_racetrack_conceptz.jpg);
     background-color: var(--bay-blue);
     padding-top: 3rem;
     height: 30rem;
@@ -1368,7 +1369,7 @@ nav.gallery {
 
 .tm-fixed-header-4 {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/docs/header_newspaper.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/header_newspaper.jpg);
     background-color: var(--bay-blue);
     padding-top: 3rem;
     height: 30rem;

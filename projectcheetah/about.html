@@ -24,286 +24,353 @@
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
     <script src="js/script.js" defer></script>
     <!--TemplateMo 552 Video Catalog: https://templatemo.com/tm-552-video-catalog-->
+
+    <!--Swiper.JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!--Swiper.JS end-->
+
 </head>
 
 <body>
     <div class="tm-page-wrap mx-auto">
-            <div class="position-absolute tm-site-header">
-                <div class="container-fluid position-relative-header">
-                    <div class="row">
-                        <div class="col-7 col-md-4">
-                            <a href="index.html" class="tm-bg-black text-center tm-logo-container">
-                                <img src="logo/logo_w.svg" class="unrounded"
-                                    alt="script wordmark logo of the word cheetah."></a>
-                        </div>
-                        <div class="col-5 col-md-8 ml-auto mr-0">
-                            <div class="tm-site-nav">
-                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
-                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed"
-                                        type="button" data-toggle="collapse" data-target="#navbar-nav"
-                                        aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span>
-                                            <i class="fas fa-bars tm-menu-closed-icon"></i>
-                                            <i class="fas fa-times tm-menu-opened-icon"></i>
-                                        </span>
-                                    </button>
-                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
-                                        <ul class="navbar-nav text-uppercase">
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="index.html">Home</a>
-                                            </li>
-                                            <li class="nav-item active">
-                                                <a class="nav-link tm-nav-link" href="about.html">About<span
-                                                        class="sr-only">(current)</span></a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="docuseries.html">Docuseries</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="uc-berkeley-concept-z.html">UCB
-                                                    Concept Z</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="the-record.html">The Record</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
+        <div class="position-absolute tm-site-header">
+            <div class="container-fluid position-relative-header">
+                <div class="row">
+                    <div class="col-7 col-md-4">
+                        <a href="index.html" class="tm-bg-black text-center tm-logo-container">
+                            <img src="logo/logo_w.svg" class="unrounded"
+                                alt="script wordmark logo of the word cheetah."></a>
                     </div>
-                </div>
-            </div>
-
-            
-            <div class="background-dark">
-                <div class="tm-welcome-container tm-fixed-header tm-fixed-header-2">
-                    <div class="row">
-                        <div class="section-container">
-                            <div class="text-container-no-border">
-                                <div class="col-title">
-                                    <h1>About the Cheetah</h1>
-                                    <!--<h4 class="no-border">The Dexter Hysol Cheetah is a fully faired semi-recumbent two
-                                        wheeled Human Powered Vehicle (HPV). The Cheetah held the world speed record for
-                                        the 200
-                                        meter flying start event.</h4>-->
-                                    <!--<img src="img/evolution/6_cheetah.png" class="no-shadow"
-                                        alt="Thin, aerodynamically shaped cheetah fairing painted black and decorated with yellow-gold decals.">-->
+                    <div class="col-5 col-md-8 ml-auto mr-0">
+                        <div class="tm-site-nav">
+                            <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                                <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed"
+                                    type="button" data-toggle="collapse" data-target="#navbar-nav"
+                                    aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span>
+                                        <i class="fas fa-bars tm-menu-closed-icon"></i>
+                                        <i class="fas fa-times tm-menu-opened-icon"></i>
+                                    </span>
+                                </button>
+                                <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                    <ul class="navbar-nav text-uppercase">
+                                        <li class="nav-item">
+                                            <a class="nav-link tm-nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link tm-nav-link" href="uc-berkeley-concept-z.html">Berkeley
+                                                roots</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link tm-nav-link" href="about.html">About<span
+                                                    class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link tm-nav-link" href="the-record.html">The Record</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link tm-nav-link" href="docuseries.html">Docuseries</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-        
-
-
-            <!-- Page content -->
-            <div class="row">
-                <div class="section-container-padded-top">
-
-                    <div class="text-container">
-                        <div class="col-title">
-                            <h2 class="no-space">The frame</h2>
-                        </div>
-
-                        <div class="col-forty">
-                            <p>The Cheetah's frame is a hollow monocoque design which is
-                                constructed
-                                with carbon fiber epoxy composite material. It has a large box section which
-                                makes
-                                the frame very stiff in a global sense despite the fact that locally, the
-                                composite
-                                is very thin. You can easily compress the frame's sides inwards 1/4 inch with
-                                hand
-                                pressure.</p>
-
-                            <h3>Bonding the frame</h3>
-                            <p>
-                                In order to mount components to the Cheetah, honeycomb stiffening panels were
-                                built
-                                into the frame where needed. Additionally, at the front and rear ends of the
-                                frame,
-                                where the aluminum inserts were later bonded in, the composite was layered
-                                thicker
-                                to distribute the shock loading smoothly into the composite. The inserts
-                                themselves
-                                were also tapered to a thin edge to reduce the discontinuity in stress at the
-                                edge
-                                of the insert bonding surface.</p>
-                        </div>
-                        <div class="col-sixty">
-                            <img src="img/cheetah/bike_only.jpg"
-                                alt="The black and gold cheetah bike is propped against a painted concrete wall.">
-                        </div>
-                    </div>
-
-                    <div class="text-container">
-                        <div class="col-title">
-                            <h2 class="no-space">Aerodynamic fairing</h2>
-                        </div>
-                        <div class="col-forty">
-                            <h4>The Cheetah's fairing is a low drag aerodynamic shape. It was
-                                designed
-                                by fitting airfoil sections around interference measurements of the rider and
-                                vehicle.</h4>
-
-                            <h3>Custom airfoils</h3>
-                            <p>Four separate airfoil sections are utilized in the design, each of
-                                which
-                                was custom created to optimize for low drag based on length, velocity, wobble,
-                                and
-                                air conditions anticipated at the record location. Other sections in the fairing
-                                are
-                                interpolations of these four optimized layers.</p>
-
-                            <p>Michael Selig, Associate Professor of Aeronautical Engineering at the University
-                                of
-                                Illinois at Urbana Champagne, who at the time was an aerodynamics grad student
-                                at
-                                Penn State, optimized the airfoil sections based on the required sizes
-                                determined by
-                                the Cheetah Team. Using custom software written for the Macintosh by James
-                                Osborn,
-                                the sections were fit around the interference data. Changes in the desired
-                                section
-                                sizes were given back to Selig for further optimization. The result of this
-                                iterative process is a very smooth low drag shape.</p>
-
-                            <h3>Constructing molds</h3>
-                            <p>The fairing was constructed out of carbon fiber epoxy composite material
-                                utilizing a
-                                multi-step process. First sections were cut precisely from Styrofoam slabs. A
-                                male
-                                master plug was created by stacking up these layers, gluing, smoothing, painting
-                                and
-                                buffing. Female molds were created from this master. And finally, the finished
-                                fairings (one for training and one for record attempts) were fabricated using
-                                these
-                                molds.</p>
-                        </div>
-
-                        <div class="col-sixty">
-                            <figure>
-                                <img src="img/build/fairing_untrimmed.jpg"
-                                    alt="Sheets of roughly carved foam are stacked to form the basic shape of the fairing.">
-                                <figcaption>Stacked airfoil sections of styrofoam sheets were sanded into a smooth
-                                    male mold.</figcaption>
-                            </figure>
-
-                            <figure>
-                                <img src="img/colorado/black_cheetah.jpg"
-                                    alt="The Cheetah team poses with the final smooth fairing in front of the Great Sand Dunes in Colorado.">
-                                <figcaption>The Cheetah team with the fairing — from left to right: Chris Huber (cyclist), James Osborn,
-                                    Kevin
-                                    Frantz, and Jon Garbarino</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="text-container">
-                        <div class="col-title">
-                            <h2 class="no-space">How Cheetah runs</h2>
-                        </div>
-                        <div class="col-forty">
-                            <p>At the front end of the frame, a large hollow aluminum insert is
-                                bonded into the frame. This insert includes features for mounting the steering tube for
-                                the front forks, the bottom bracket (pedal spindle), and the front fairing mount.The
-                                insert
-                                was designed to be rigid and yet evenly disperse into the frame composite
-                                itself the shock loading induced by pedaling and riding the Cheetah.</p>
-
-                            <p>Similarly, at the rear of the frame, aluminum inserts are bonded
-                                into
-                                the frame to provide dropouts (rear wheel mounting locations) and rear fairing
-                                mount
-                                locations.</p>
-
-                            <p>An intermediate gearing assembly was custom designed and built to
-                                step up the gear ratio between the front chain ring and the rear freewheel cluster.
-                                The intermediate assembly accepts standard bicycle chainrings, but actually spins
-                                upon a pair of lightweight aircraft bearings, about a fixed shaft mounted to the frame.
-                            </p>
-
-                            <h3>Optimizing speed</h3>
-                            <p>The front chain loop is fixed and does not shift, hence the Cheetah only has seven
-                                speeds. With the intermediate gear assembly though, it is equivalent to using a
-                                chainring with over 100 teeth on a conventional road bicycle! In fact the
-                                Cheetah's lowest speed is about the same as a road bike's top speed. This makes for
-                                tricky
-                                starts since the rider is pedaling very slowly at first. This does not present a
-                                problem for a professional cyclist and with the Cheetah's low drag, the rider is
-                                able to "get on top of" that first gear in short order.</p>
-                        </div>
-
-                        <div class="col-sixty">
-                            <figure>
-                                <img src="img/colorado/chris_side_profile.jpg"
-                                    alt="The black and gold cheetah bike is propped against a painted concrete wall.">
-                                <figcaption>Chris Huber on the Cheetah bike.</figcaption>
-                            </figure>
-
-                            <figure>
-                                <img src="img/colorado/nested_bike.jpg"
-                                    alt="The yellow practive fairing is split in half horizontally revealing the bike inside.">
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="text-container">
-                        <div class="col-title">
-                            <h2 class="no-space">Materials</h2>
-                        </div>
-                        <div class="col-forty">
-                            <h4>The Cheetah bike is predominantly constructed of carbon fiber composites
-                                with aluminum inserts
-                                bonded in with Hysol adhesives.</h4>
-
-                            <p>Bicycle components donated by Campagnolo include a
-                                tensioned Kevlar rear disk wheel and a generous selection of alloy chainrings and
-                                freewheels. Most other components were custom designed and fabricated by the Cheetah
-                                Team.</p>
-                            <p>The aerodynamic fairing which encloses the rider of the Cheetah is also
-                                constructed of carbon fiber composite. Aerodynamic design and advice was provided by
-                                Michael Selig (currently an assistant professor of aeronautical engineering at the
-                                University of Illinois at Urbana Champagne). The Cheetah weighs in at 29.5
-                                pounds complete with fairing and ready to ride.</p>
-
-                            <p class="credits"> Words by co-engineer of the Cheetah, James R. Osborn and edited by
-                                Natalie
-                                Garbarino.</p>
-                        </div>
-
-                        <div class="col-sixty">
-                            <img src="img/build/materials.jpg"
-                                alt="sheets of composite materials distributed on a table.">
-                        </div><!--END COL-RIGHT-->
-                    </div><!--END TEXT-CONTAINER-->
-                </div><!--END SECTION-CONTAINER-->
-            </div><!--END ROW-->
         </div>
 
-        <footer>
-            <div class="col-title">
-                <ul class="list-unstyled tm-footer-links">
-                    <li class="nav-item"><a class="tm-nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="tm-nav-link" href="docuseries.html">Docuseries</a></li>
-                    <li class="nav-item"><a class="tm-nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="tm-nav-link" href="uc-berkeley-concept-z.html">UCB Concept Z</a></li>
-                    <li class="nav-item"><a class="tm-nav-link" href="the-record.html">The Record</a></li>
-                </ul>
+
+        <div class="background-dark">
+            <div class="tm-welcome-container tm-fixed-header tm-fixed-header-2">
+                <div class="row">
+                    <div class="section-container">
+                        <div class="text-container-no-border">
+                            <div class="text-center">
+                                <h1>Engineering the Cheetah</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <p class="text-credits">
-                Copyright 2025 Project Cheetah | For educational purposes only.
-                <br>Web design by Natalie Garbarino | Derivative of template courtesy <a class="underline"
-                    href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo.</a>
-            </p>
-        </footer>
 
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/parallax.min.js"></script>
+
+        <!-- Page content -->
+
+        <div class="row">
+            <div class="section-container-padded-top">
+
+                <div class="text-container">
+                    <div class="text">
+                        <h2>Aerodynamic fairing</h2>
+                        <h4>The Cheetah's fairing is a low drag aerodynamic shape. It was
+                            designed
+                            by fitting airfoil sections around interference measurements of the rider and
+                            vehicle.</h4>
+                        <h3>Custom airfoils</h3>
+                        <p>Four separate airfoil sections are utilized in the design, each of
+                            which
+                            was custom created to optimize for low drag based on length, velocity, wobble,
+                            and
+                            air conditions anticipated at the record location. Other sections in the fairing
+                            are
+                            interpolations of these four optimized layers.</p>
+                        <p>Michael Selig, Associate Professor of Aeronautical Engineering at the University
+                            of
+                            Illinois at Urbana Champagne, who at the time was an aerodynamics grad student
+                            at
+                            Penn State, optimized the airfoil sections based on the required sizes
+                            determined by
+                            the Cheetah Team. Using custom software written for the Macintosh by James
+                            Osborn,
+                            the sections were fit around the interference data. Changes in the desired
+                            section
+                            sizes were given back to Selig for further optimization. The result of this
+                            iterative process is a very smooth low drag shape.</p>
+
+                        <h3>Building the fairing</h3>
+                        <p>The fairing was constructed out of carbon fiber epoxy composite material utilizing a
+                            multi-step process. Once optimized, each airfoil section was cut precisely from Styrofoam
+                            slabs. A male master plug was created by stacking up these slabs, gluing, sanding, coating,
+                            painting and buffing. Then fiberglass female molds were created from this master. And
+                            finally, extremely thin and light finished fairings (one for training and one for record
+                            attempts) were fabricated using these molds.</p>
+                    </div>
+
+
+                    <!--SWIPER CAROUSEL-->
+                    <div class="container-carousel"> <!-- Slider main container -->
+                        <div class="swiper">
+
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="image_wrapper">
+                                        <img src="img/carousel_fairing/1_airfoils_unsanded.jpg"
+                                            alt="Sheets of roughly carved foam are stacked to form the basic shape of the fairing.">
+                                    </div>
+                                    <div class="caption-swiper">
+                                        <p>Hey there! I am a caption and I should not be overlapped by the
+                                            pagination
+                                            element.
+                                        <p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="image_wrapper">
+                                        <img src="img/carousel_fairing/2_airfoils_sanded.jpg" alt="---" />
+                                    </div>
+                                    <div class="caption-swiper">
+                                        <p>Hey there! I am a caption and I should not be overlapped by the
+                                            pagination
+                                            element.
+                                        <p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="image_wrapper">
+                                        <img src="img/carousel_fairing/3_smoothing.jpg" alt="---" />
+                                    </div>
+                                    <div class="caption-swiper">
+                                        <p>Hey there! I am a caption and I should not be overlapped by the
+                                            pagination
+                                            element.
+                                        <p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="image_wrapper">
+                                        <img src="img/carousel_fairing/4_wax_application.jpg" alt="---" />
+                                    </div>
+                                    <div class="caption-swiper">
+                                        <p>Hey there! I am a caption and I should not be overlapped by the
+                                            pagination
+                                            element.
+                                        <p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="image_wrapper">
+                                        <img src="img/carousel_fairing/5a_carbon_fiber_application.jpg" alt="---" />
+                                    </div>
+                                    <div class="caption-swiper">
+                                        <p>Hey there! I am a caption and I should not be overlapped by the
+                                            pagination
+                                            element.
+                                        <p>
+                                    </div>
+                                </div>
+                            </div> <!--End swiper-wrapper-->
+
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                        </div> <!--End swiper-->
+                    </div> <!--END SWIPER CAROUSEL (end container)-->
+                </div><!--END TEXT-CONTAINER-->
+
+
+                <div class="text-container">
+                    <div class="text">
+                        <h2>Powering the Cheetah</h2>
+                        <p>The drivetrain of the cheetah is that of a conventional bicycle since it is a very efficient
+                            way of transferring power, however an intermediate gear assembly was custom designed and
+                            built to step up the gear ratio between the front chain ring and the rear freewheel cluster.
+                            This arrangement allows the cyclist to pedal at an rpm which enables him to deliver maximum
+                            power at speed near the targeted record. The intermediate assembly accepts standard bicycle
+                            chainrings, and rotates upon a pair of lightweight aircraft bearings, about a fixed shaft
+                            mounted to the frame. At the front end of the frame, a large hollow aluminum insert includes
+                            features for mounting the steering tube for the front forks, the bottom bracket (pedal
+                            spindle), and the front fairing mount. Similarly, at the rear of the frame inserts provide
+                            dropouts (rear wheel mounting locations) and rear fairing mount locations.</p>
+                        <p>Bicycle components donated by Campagnolo include a tensioned Kevlar rear disk wheel and a
+                            generous selection of alloy chainrings and freewheels. </p>
+                    </div><!--END TEXT-->
+                </div><!--END TEXT-CONTAINER-->
+
+
+                <div class="text-container">
+                    <div class="text">
+                        <h2>The internal frame</h2>
+                        <p>The Cheetah's frame is a hollow monocoque design which is composed of carbon fiber epoxy
+                            composite material which is widely used in the Aerospace Industry due to its characteristics
+                            of high specific stiffness and strength. It has a large box cross-section which makes it
+                            very stiff and strong in a global sense despite the fact that locally, the composite is very
+                            thin. One can easily compress the frame's sides inwards 1/4 inch with hand pressure.</p>
+                        <h3>No stress</h3>
+                        <p>In order to exploit the global strength and stiffness, high localized stresses at the drive
+                            train, seat, steering axis and wheels are carefully engineered to distribute the loading
+                            gently into the large thinwall box section. The intermediate gear set at the frames center
+                            is mounted to an extremely stiff honeycomb panel concealed within its mid-section. Specially
+                            designed attachment points for the seat help transfer all of the power of the vehicle’s
+                            rider to the pedals. Loading at the wheels and steering is distributed via aluminum inserts
+                            which are tapered and bonded into the thin walled structure with high strength aerospace
+                            adhesive.</p>
+                    </div><!--END TEXT-->
+                </div><!--END TEXT-CONTAINER-->
+            </div>
+        </div>
+
+        <div class="background-dark">
+            <div class="row">
+                <div class="section-container-padded-top">
+                    <div class="text-container-no-border">
+                        <div class="text">
+                            <div class="text-center">
+                                <h2>Learning from the Concept Z</h2>
+
+                                <p class="white">The U.C. Berkeley Human Powered Vehicle Team named their creation
+                                    Concept Z as a symbolic moniker, implying that it would be the final perfect
+                                    iteration in the design process. Though, it became clear that it could be more
+                                    perfect. Drawing from their college coursework, the Cheetah team targeted several
+                                    deficiencies which would spell the difference between a successful design and one
+                                    capable of setting a world record.</p>
+                            </div>
+                        </div>
+
+                        <div class="cards">
+                            <p><span class="runin">Aerodynamics &#10132;</span>
+                                The Concept Z was designed using a published NACA airfoil profile which was stretched
+                                and expanded to fit the rider and frame. NACA shapes are designed for use on airplanes.
+                                For the Cheetah custom airfoils were optimized for the lowest drag at the record speed.
+                                A significant reduction in the drag coefficient was realized in this process.</p>
+
+                            <p><span class="runin">Vibrations &#10132;</span>
+                                The Concept Z suffered from losses due to poor wheel alignment. A precision jig made to
+                                align wheel components during the composite frame construction was a critical
+                                improvement.</p>
+
+                            <p><span class="runin">Strength of materials &#10132;</span>
+                                Every assembly on the Concept Z was analyzed for its strength to weight ratio and was
+                                optimized on the Cheetah. In the case of the seat, a heavy bicycle seat, composite back
+                                support and metal mounting assembly was replaced by a one-piece carbon fiber structure
+                                which was custom formed to fit the cyclist.</p>
+
+                            <p><span class="runin">Dynamics &#10132;</span>
+                                The Concept Z suffered from losses due to poor wheel alignment. A precision jig made to
+                                align wheel components during the composite frame construction was a critical
+                                improvement.
+                            </p>
+
+                            <p><span class="runin">Statics &#10132;</span>
+                                The Concept Z suffered power transmission loss due to frame deflection at a drivetrain
+                                attachment point. On the Cheetah this area of the frame was locally stiffened to
+                                eliminate power lost through deformation.</p>
+                        </div>
+                        <p class="credits">Any necessary sources and/or accreditation go here</p>
+                    </div> <!--text-container-->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="section-container-padded-top">
+                <div class="text-container">
+                    <div class="text">
+                        <h2>Cheetah secrets</h2>
+                        <p>The semirecumbent riding position of the cheetah was determined by rotating the position of
+                            the racing cyclist by 90 degrees, thereby allowing for maximum power to be produced by
+                            placing the driver in an efficient conventional racing posture. The rotation worked to
+                            minimize vehicle frontal area, a variable directly proportional to Aerodynamic drag.</p>
+                        <p>The cheetah seat was formed by creating a casting of the rider's rear end combined with the
+                            rotated bicycle saddle. This casting was transformed into a plug and eventually a perfectly
+                            fitting light hollow seat. This produced a virtually seamless integration point joining
+                            rider to drive system.</p>
+                        <p>Any openings in an aerodynamic fairing may exact a significant drag penalty. The Cheetah
+                            avoided this by sealing the front wheel opening with a flexible membrane attached to a frame
+                            that was attached to the front wheel. This arrangement allowed steering with a minimal
+                            opening.</p>
+                        <p>With vibrations induced by wheel mis-alignment, road roughness, fairing attachment resonances
+                            and airflow induced vibration it can be challenging to maintain control and trajectory at
+                            speeds in excess of 60 mph. Hidden under the frame and carefully coupled to the front
+                            steering tube is a dampener to smooth out any disturbance which threatens perfect control.
+                        </p>
+                        <p>Finally, during the final series of attempts the team came across an abandoned tabby kitten,
+                            a new pet that they dubbed Cheetah. He was, they felt, a Talisman which brought the last bit
+                            of magic enabling this historical achievement.</p>
+                    </div><!--END TEXT-->
+                </div><!--END TEXT-CONTAINER-->
+
+            </div>
+        </div><!--END SECTION-CONTAINER-->
+    </div>
+
+    <footer>
+        <div class="col-title">
+            <ul class="list-unstyled tm-footer-links">
+                <li class="nav-item"><a class="tm-nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="tm-nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="tm-nav-link" href="docuseries.html">Docuseries</a></li>
+                <li class="nav-item"><a class="tm-nav-link" href="uc-berkeley-concept-z.html">Berkeley roots</a>
+                </li>
+                <li class="nav-item"><a class="tm-nav-link" href="the-record.html">The Record</a></li>
+                <li class="nav-item"><a class="tm-nav-link" href="gallery.html">Archives</a></li>
+            </ul>
+        </div>
+
+        <p class="text-credits">
+            Copyright 2025 Project Cheetah | For educational purposes only.
+            <br>Web design by Natalie Garbarino | Derivative of template courtesy <a class="underline"
+                href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo.</a>
+        </p>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Swiper.JS script tag-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--END Swiper.JS script tag-->
 </body>
 
 </html>

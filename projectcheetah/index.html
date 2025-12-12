@@ -29,6 +29,7 @@
 
 <body>
     <div class="tm-page-wrap mx-auto">
+
         <div class="position-relative">
             <div class="position-absolute tm-site-header">
                 <div class="container-fluid position-relative-header">
@@ -56,16 +57,16 @@
                                                         class="sr-only">(current)</span></a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="about.html">About</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="docuseries.html">Docuseries</a>
-                                            </li>
-                                            <li class="nav-item">
                                                 <a class="nav-link tm-nav-link" href="uc-berkeley-concept-z.html">Berkeley roots</a>
                                             </li>
                                             <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                            </li>
+                                            <li class="nav-item">
                                                 <a class="nav-link tm-nav-link" href="the-record.html">The Record</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="docuseries.html">Docuseries</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -160,7 +161,7 @@
     <div class="background-dark">
         <div class="section-container">
             <div class="text-container-no-border">
-                <h2 class="no-space">Evolution of the Cheetah</h2>
+                <h2>Evolution of the Cheetah</h2>
                 <h4 class="no-border">Explore the UC Berkeley Human Powered Vehicle (HPV) club
                     prototypes that
                     inspired the Cheetah.</h4>
@@ -364,11 +365,10 @@
         <div class="col-title">
             <ul class="list-unstyled tm-footer-links">
                 <li class="nav-item"><a class="tm-nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="tm-nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="tm-nav-link" href="docuseries.html">Docuseries</a></li>
                 <li class="nav-item"><a class="tm-nav-link" href="uc-berkeley-concept-z.html">Berkeley roots</a></li>
+                <li class="nav-item"><a class="tm-nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="tm-nav-link" href="the-record.html">The Record</a></li>
-                <li class="nav-item"><a class="tm-nav-link" href="gallery.html">Archives</a></li>
+                <li class="nav-item"><a class="tm-nav-link" href="docuseries.html">Docuseries</a></li>
             </ul>
         </div>
 
@@ -384,66 +384,6 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        function setVideoSize() {
-            const vidWidth = 1920;
-            const vidHeight = 1080;
-            let windowWidth = window.innerWidth;
-            let newVidWidth = windowWidth;
-            let newVidHeight = windowWidth * vidHeight / vidWidth;
-            let marginLeft = 0;
-            let marginTop = 0;
-
-            if (newVidHeight < 500) {
-                newVidHeight = 500;
-                newVidWidth = newVidHeight * vidWidth / vidHeight;
-            }
-
-            if (newVidWidth > windowWidth) {
-                marginLeft = -((newVidWidth - windowWidth) / 2);
-            }
-
-            if (newVidHeight > 720) {
-                marginTop = -((newVidHeight - $('#tm-video-container').height()) / 2);
-            }
-
-            const tmVideo = $('#tm-video');
-
-            tmVideo.css('width', newVidWidth);
-            tmVideo.css('height', newVidHeight);
-            tmVideo.css('margin-left', marginLeft);
-            tmVideo.css('margin-top', marginTop);
-        }
-
-        $(document).ready(function () {
-            /************** Video background *********/
-
-            setVideoSize();
-
-            // Set video background size based on window size
-            let timeout;
-            window.onresize = function () {
-                clearTimeout(timeout);
-                timeout = setTimeout(setVideoSize, 100);
-            };
-
-            // Play/Pause button for video background      
-            const btn = $("#tm-video-control-button");
-
-            btn.on("click", function (e) {
-                const video = document.getElementById("tm-video");
-                $(this).removeClass();
-
-                if (video.paused) {
-                    video.play();
-                    $(this).addClass("fas fa-pause");
-                } else {
-                    video.pause();
-                    $(this).addClass("fas fa-play");
-                }
-            });
-        })
-    </script>
 </body>
 
 </html>

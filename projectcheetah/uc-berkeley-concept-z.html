@@ -24,10 +24,14 @@
 	<link rel="stylesheet" href="css/templatemo-video-catalog.css">
 	<script src="js/script.js" defer></script>
 	<!--TemplateMo 552 Video Catalog: https://templatemo.com/tm-552-video-catalog-->
+	<!--Swiper.JS-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+	<!--Swiper.JS end-->
 </head>
 
 <body>
 	<div class="tm-page-wrap mx-auto">
+
 		<div class="position-absolute tm-site-header">
 			<div class="container-fluid position-relative-header">
 				<div class="row">
@@ -53,18 +57,18 @@
 										<li class="nav-item">
 											<a class="nav-link tm-nav-link" href="index.html">Home</a>
 										</li>
-										<li class="nav-item">
-											<a class="nav-link tm-nav-link" href="about.html">About</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link tm-nav-link" href="docuseries.html">Docuseries</a>
-										</li>
 										<li class="nav-item active">
 											<a class="nav-link tm-nav-link" href="uc-berkeley-concept-z.html">Berkeley
 												roots<span class="sr-only">(current)</span></a>
 										</li>
 										<li class="nav-item">
+											<a class="nav-link tm-nav-link" href="about.html">About</a>
+										</li>
+										<li class="nav-item">
 											<a class="nav-link tm-nav-link" href="the-record.html">The Record</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link tm-nav-link" href="docuseries.html">Docuseries</a>
 										</li>
 									</ul>
 								</div>
@@ -76,7 +80,7 @@
 		</div>
 
 		<div class="background-dark">
-			<div class="tm-welcome-container tm-fixed-header tm-fixed-header-5">
+			<div class="tm-welcome-container tm-fixed-header tm-fixed-header-3">
 				<div class="row">
 					<div class="section-container">
 						<div class="text-container-no-border">
@@ -98,10 +102,9 @@
 
 		<!-- Page content -->
 		<div class="row">
-			<div class="section-container-padded-top">
+			<div class="section-container">
 
 				<div class="text-container">
-
 					<div class="text">
 						<h2>UC Berkeley Human Powered Vehicle team</h2>
 
@@ -118,14 +121,80 @@
 							maximum speed relative to the competition over a designated sprint course. The final phase
 							involved side by side racing over a closed road circuit. The overall champion was determined
 							by combining a team’s standing over these phases.</p>
-					</div>
-					<img src="img/concept_z/group_photo_conceptz.jpeg"
-						alt="A group of thirteen berkeley students pose with the red concept z bicycle underneath a tree.">
-					<figcaption>The UC Berkeley Human Powered Vehicle team poses with "Concept Z."</figcaption>
-				</div>
+					</div> <!--END TEXT-->
 
+					<!--SWIPER CAROUSEL-->
+					<div class="container-carousel"> <!-- Slider main container -->
+						<div class="swiper">
 
-				<div class="text-container">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+
+								<!--<div class="swiper-slide">
+									<div class="image_wrapper">
+										<img src="img/placeholder.jpeg" alt="---">
+									</div>
+									<div class="caption-swiper">
+										<p>Presentation of Engineering Report at CSUN
+										<p>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="image_wrapper">
+										<img src="img/placeholder.jpeg" alt="---">
+									</div>
+									<div class="caption-swiper">
+										<p>Presentation of Engineering Report at CSUN
+										<p>
+									</div>
+								</div>-->
+
+								<div class="swiper-slide">
+									<div class="image_wrapper">
+										<img src="img/carousel_UCB/racetrack_conceptz_day.jpeg" alt="---">
+									</div>
+									<div class="caption-swiper">
+										<p>Concept Z warms up for velodrome sprints at CSUN
+										<p>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="image_wrapper">
+										<img src="img/carousel_UCB/scoreboard_hpv_competition.jpeg" alt="---">
+									</div>
+									<div class="caption-swiper">
+										<p>Concept Z sets the bar for ASME sprints at CSUN
+										<p>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="image_wrapper">
+										<img src="img/carousel_UCB/ASME_sac_state.jpg"
+											alt="three bicycles zip by during a road race.">
+									</div>
+									<div class="caption-swiper">
+										<p>Concept Z Competes in Road race at Sac St ASME
+										<p>
+									</div>
+								</div>
+
+							</div> <!--End swiper-wrapper-->
+
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+
+						</div> <!--End swiper-->
+					</div> <!--END SWIPER CAROUSEL (end container)-->
+
+				</div><!--END TEXT-CONTAINER-->
+
+				<div class="text-container-no-flex">
 					<div class="text">
 						<h2>Demands of the project</h2>
 						<p>While the goals of the competition were clearly defined at the beginning of each year, the
@@ -135,11 +204,19 @@
 							of these demands needed to be met while studying and progressing through their coursework.
 						</p>
 					</div>
-					<figure>
-						<img src="img/placeholder.jpeg"
-							alt="---">
-						<figcaption>Caption here — if desired.</figcaption>
-					</figure>
+
+
+					<div class="col">
+						<div class="col-30">
+							<img src="img/concept_z/mechanician.jpg" alt="---">
+							<figcaption>Etcheverry Mechanician shares machining expertise</figcaption>
+						</div>
+						<div class="col-70">
+							<img src="img/concept_z/conceptz_conceptz_side.jpeg"
+								alt="Red bike fairing with blue grafitti-style lettering on the side.">
+							<figcaption>Workspace outside the shop on Etcheverry</figcaption>
+						</div>
+					</div>
 
 					<div class="text">
 						<h2>How they did it</h2>
@@ -147,6 +224,7 @@
 							at a premium. The answer was a very small unused room sitting on the roof of Etcheverry
 							hall. The room itself was small but the rest of the roof provided an expansive and scenic
 							outdoor work area.</p>
+
 						<p>Team members found sponsors from local industry and networked with local aerospace companies
 							to obtain construction materials, use of facilities, and additional technical expertise.</p>
 						<p>They relied on learning from their Statics, Dynamics, Aerodynamics, Mechanics of Materials,
@@ -159,35 +237,49 @@
 						<h2>The Results</h2>
 
 						<h3>The first ASME competition</h3>
-								<p>In 1988, the Concept Z, Berkeley’s first semi-recumbent 2 wheeled HPV, was entered
-									into the ASME annual competition at Sacramento State University. Their design was
-									both innovative and overly ambitious, undergoing key steps of assembly on the night
-									before the competition. </p>
-								<p>The weekend’s events provided the initial ground for testing and significant design
-									errors quickly became apparent. Despite its shortcomings, the vehicle provided a
-									tantalizing glimpse into its potential in the final road race as it chased down and
-									caught the competition's fastest designs. It was a harbinger to the other
-									Universities that Berkeley would soon make its mark in human powered technology.</p>
-								<p>In 1989, a new look and further optimized Concept Z traveled to Cal State Northridge.
-									It was clear from the start that Cal would be in contention as they finished first
-									in the design portion of the competition. Going into the final road racing event,
-									the team led the overall competition. However, several on-track mishaps resulted in
-									a 2nd place finish.</p>
+						<p>In 1988, the Concept Z, Berkeley’s first semi-recumbent 2 wheeled HPV, was entered
+							into the ASME annual competition at Sacramento State University. Their design was
+							both innovative and overly ambitious, undergoing key steps of assembly on the night
+							before the competition.</p>
+						<p>The weekend’s events provided the initial ground for testing and significant design
+							errors quickly became apparent. Despite its shortcomings, the vehicle provided a
+							tantalizing glimpse into its potential in the final road race as it chased down and
+							caught the competition's fastest designs. It was a harbinger to the other
+							Universities that Berkeley would soon make its mark in human powered technology.</p>
+					</div>
 
-								<h3>What they won</h3>
-								<p>They sacrificed their free time away from classes and worked exhaustively into the
-									weekends and nights for a second place trophy? Team members agree that being
-									involved with the HPV Team afforded opportunities that their classwork provided in
-									limited ways. Being on the team allowed them to autonomously explore creative
-									applications of their education, test their understanding of what they were learning
-									and, most importantly, collaborate with other like minded students to accomplish a
-									common goal.</p>
+					<div class="col">
+						<div class="two-col">
+							<img src="img/concept_z/HPV_team_photo_roof_4x5.jpg" alt="---">
+							<figcaption>HPV Team members stand with Concept Z test mule</figcaption>
+						</div>
+						<div class="two-col">
+							<img src="img/concept_z/unpainted_fairing_roof.jpg" alt="---">
+							<figcaption>Newly formed Concept Z shell undergoes test fit</figcaption>
+						</div>
+					</div>
+
+					<div class="text">
+						<h3>An improved Concept Z</h3>
+						<p>In 1989, a new look and further optimized Concept Z traveled to Cal State Northridge.
+							It was clear from the start that Cal would be in contention as they finished first
+							in the design portion of the competition. Going into the final road racing event,
+							the team led the overall competition. However, several on-track mishaps resulted in
+							a 2nd place finish.</p>
+
+						<h3>What they won</h3>
+						<p>They sacrificed their free time away from classes and worked exhaustively into the
+							weekends and nights for a second place trophy? Team members agree that being
+							involved with the HPV Team afforded opportunities that their classwork provided in
+							limited ways. Being on the team allowed them to autonomously explore creative
+							applications of their education, test their understanding of what they were learning
+							and, most importantly, collaborate with other like minded students to accomplish a
+							common goal.</p>
 					</div>
 
 					<figure>
-						<img src="img/placeholder.jpeg"
-							alt="---">
-						<figcaption>Caption here — if desired.</figcaption>
+						<img src="img/concept_z/group_photo_conceptz.jpeg" alt="---">
+						<figcaption>1989 HPV Team and the Concept Z</figcaption>
 					</figure>
 
 
@@ -219,12 +311,11 @@
 			<div class="col-title">
 				<ul class="list-unstyled tm-footer-links">
 					<li class="nav-item"><a class="tm-nav-link" href="index.html">Home</a></li>
-					<li class="nav-item"><a class="tm-nav-link" href="about.html">About</a></li>
-					<li class="nav-item"><a class="tm-nav-link" href="docuseries.html">Docuseries</a></li>
 					<li class="nav-item"><a class="tm-nav-link" href="uc-berkeley-concept-z.html">Berkeley roots</a>
 					</li>
+					<li class="nav-item"><a class="tm-nav-link" href="about.html">About</a></li>
 					<li class="nav-item"><a class="tm-nav-link" href="the-record.html">The Record</a></li>
-					<li class="nav-item"><a class="tm-nav-link" href="gallery.html">Archives</a></li>
+					<li class="nav-item"><a class="tm-nav-link" href="docuseries.html">Docuseries</a></li>
 				</ul>
 			</div>
 
@@ -237,6 +328,10 @@
 
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<!--Swiper.JS script tag-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+		<!--END Swiper.JS script tag-->
 </body>
 
 </html>

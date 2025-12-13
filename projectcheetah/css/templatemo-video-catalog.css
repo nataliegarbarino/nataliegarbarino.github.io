@@ -459,6 +459,12 @@ img {
     border-radius: .25rem;
 }
 
+img.rotated {
+    transform: rotate(var(--angle, -5deg));
+    margin: auto;
+    width: 80%;
+}
+
 img.no-shadow {
     box-shadow: none;
 }
@@ -626,11 +632,12 @@ h2.decorative-left {
 }
 
 h2.quote {
-    font-size: 20rem;
+    font-size: 15rem;
     margin-top: 7rem;
     line-height: 0rem;
     padding: 0rem 0rem 0rem;
-    text-align: right;
+    transform: translateX(-1rem);
+    text-align: left;
 }
 
 h3 {
@@ -1241,7 +1248,11 @@ flex: 0 0 calc(50% - 0.5rem);
 
 
 .col-70 {
-    flex: 0 0 calc(70% - 0.5rem);
+    flex: 0 0 calc(20% - 0.5rem);
+  }
+
+.col-20 {
+    flex: 0 0 calc((20% - 4rem)/5);
   }
   
 .col-30 {
@@ -1520,6 +1531,14 @@ video {
         margin-bottom: 1rem;
       }
 
+      .col-20 {
+        flex: 0 0 100%;
+      }
+
+      img.rotated {
+        width: 60%;
+    }
+
     div.text-padded-left {
         float: left;
         padding: 5rem 1.75rem 2rem;
@@ -1584,11 +1603,9 @@ video {
     }
 
     h2.quote {
-        font-size: 20rem;
         margin-top: 7rem;
         line-height: 0rem;
         padding: 0rem 0rem 0rem;
-        text-align: center;
     }
 
     .text-container,

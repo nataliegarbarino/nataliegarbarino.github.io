@@ -1248,7 +1248,7 @@ flex: 0 0 calc(50% - 0.5rem);
 
 
 .col-70 {
-    flex: 0 0 calc(20% - 0.5rem);
+    flex: 0 0 calc(70% - 0.5rem);
   }
 
 .col-20 {
